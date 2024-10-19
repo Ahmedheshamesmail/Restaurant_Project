@@ -15,8 +15,6 @@ $coupons = App\Models\Coupon::where('client_id',$client->id)->where('status','1'
                   <div class="favourite-heart text-danger position-absolute"><a aria-label="Add to Wishlist" onclick="addWishList({{$client->id}})" ><i class="icofont-heart"></i></a></div>
                   @if ($coupons)
                   <div class="member-plan position-absolute"><span class="badge badge-dark">Promoted</span></div>
-
-
                   <li class="nav-item dropdown dropdown-cart">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <i class="fas fa-shopping-basket"></i> Cart
